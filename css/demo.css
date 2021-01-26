@@ -125,7 +125,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	height: 100vh;
 	margin: 0 auto;
 }
 
@@ -149,7 +149,6 @@ main {
 	pointer-events: auto;
 }
 
-/* Header */
 
 .demos {
 	position: relative;
@@ -232,4 +231,143 @@ a.demo--current {
 		padding: 0.85em;
 	}
 
+}
+
+/* Header */
+.distortion-header {
+	position: relative;
+	z-index: 100;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-items: center;
+	align-self: start;
+	grid-area: header;
+	justify-self: start;
+}
+
+
+  h2.heading {
+	position: absolute;
+	top: 16px;
+	color: white;
+	font-size: 30px;
+	left: 140px;
+
+}
+ h2.mid-heading {
+	position: absolute;
+	letter-spacing: 7.2px;
+	font-style: bold;
+	font-weight: 600;
+	top: 300px;
+	color: var(--bg-white-100);
+	font-size: 50px;
+	text-align: left;
+	left: 160px;
+}
+p {
+	position: absolute;
+	width: 700px;
+	height: 81px;
+	letter-spacing: 2px;
+	left: 400px;
+	top: 400px;
+	text-align: center;
+	font-size: 25px;
+	color: var(--bg-white-100);
+
+}
+
+.hamburger-btn i {
+	position: absolute;
+	top: 50px;
+	color: var(--bg-white-100);
+	font-size: 30px;
+	left: 83px;
+	/*border-radius: 50% 50% 0 0;*/
+}
+
+
+/*Liquid Gradient CTA button*/
+a {
+	text-decoration: none;
+	font-size: 23px;
+	color: var(--bg-white-100);
+}
+
+.btn-cta {
+	position: relative;
+	top: 530px;
+	left: 600px;
+	width: 220px;
+	height: 73px;
+	padding: 1em 2em;
+	border-radius: 50px;
+	background: transparent linear-gradient(90deg, #1FE1E9 0%, #5E33D1 34%, #D34848 65%, #FFB33F 100%) 0% 0% no-repeat padding-box;
+	text-transform: uppercase;
+	background-size: 400%;
+	animation: animate 2s linear infinite;
+}
+
+.btn-cta::before,
+ .btn-cta::after {
+	position: absolute;
+	top: -200px;
+	left: 40rem;
+	width: 600px;
+	height: 73px;
+	padding: 1em 2em;
+	border-radius: 50px;
+	cursor: pointer;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	background: transparent linear-gradient(90deg, #1FE1E9 0%, #5E33D1 34%, #D34848 65%, #FFB33F 100%) 0% 0% no-repeat padding-box;
+	text-transform: uppercase;
+	background-size: 100%;
+	animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 100% 0;
+	}
+
+	100% {
+		background-position: 100% 0;
+	}
+}
+
+
+ .btn-cta:hover,
+ .btn-cta:focus {
+	background: transparent linear-gradient(45deg, #1FE1E9 0%, #5E33D1 34%, #D34848 65%, #FFB33F 100%) 0% 0% no-repeat padding-box;
+	text-transform: uppercase;
+	transition: animate 5s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 100% 0;
+	}
+
+	100% {
+		background-position: 100% 0;
+	}
+}
+
+/*red section*/
+
+.red-section{
+	height: 100vh;
+	background-color: #D34848;
+	top: 100vh;
+	width: 1920px;
 }

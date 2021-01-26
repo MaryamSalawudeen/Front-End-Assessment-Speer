@@ -6,25 +6,32 @@ canvas {
 }
 
 .scene-nav {
-	font-size: 1.15em;
-	position: fixed;
-	top: 80%;
+	font-size:2em;
+	position: absolute;
+	top: 90%;
 	transform: translateY(-50%);
 	z-index: 10;
 	background: none;
 	border: 0;
 	right: 0;
-	padding: 1.5em;
+	padding: 1em;
 	color: var(--color-nav);
 	justify-content: space-between;
 }
-
+.scene-nav--prev i:hover,
+.scene-nav--next i:hover{
+	background-color: white;
+	border-radius: 100%;
+}
 .scene-nav:focus {
 	outline: none;
 }
 
 .scene-nav--prev {
-	left: 0;
+	left: 630px;
+}
+.scene-nav--next {
+	right: 550px;
 }
 
 .slide-wrapper {
