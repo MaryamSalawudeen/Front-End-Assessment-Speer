@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Main Landing Page</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body class="demo-1 loading">
+		
+		<main class="site-wrapper">
+			<div class="content content--fixed">
+				<nav class="demos">
+					<a class="demo demo--current" href="index.html"><span></span></a>
+				</nav>
+				
+			</div>
+			<div class="content">
+				<div class="slide-wrapper">
+					<div class="slide-item">
+						<img src="img/Image 1.png" class="slide-item__image">
+					</div>
+					<div class="slide-item">
+						<img src="img/Image 2.png" class="slide-item__image">
+					</div>
+					<div class="slide-item">
+						<img src="img/Image 3.png" class="slide-item__image">
+					</div>					
+				</div>
+				<button class="scene-nav scene-nav--prev" data-nav="previous"><i class="fas fa-arrow-alt-circle-left"></i></button>
+				<button class="scene-nav scene-nav--next" data-nav="next"><i class="fas fa-arrow-alt-circle-right" ></i></button>
+		
+			</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script src="js/demo.js"></script>
+		<script src="js/pixi.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script>
+			imagesLoaded(document.body, () => document.body.classList.remove('loading'));
+
+			var spriteImages 	= document.querySelectorAll( '.slide-item__image' );
+			var spriteImagesSrc = [];
+
+			for ( var i = 0; i < spriteImages.length; i++ ) {
+				var img = spriteImages[i];
+				spriteImagesSrc.push( img.getAttribute('src' ) );
+			}
+
+			var initCanvasSlideshow = new CanvasSlideshow({
+				sprites: spriteImagesSrc,
+				displacementImage: 'img/dmaps/2048x2048/clouds.jpg',
+				autoPlay: true,
+				autoPlaySpeed: [10, 3],
+				displaceScale: [200, 70]
+			});
+		</script>
+	</body>
+</html>
