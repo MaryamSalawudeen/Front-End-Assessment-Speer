@@ -1,0 +1,274 @@
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    background: #000;
+}
+body{
+    overflow-x: hidden;
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+/*header*/
+/*Navigation menu*/
+header{
+    background: black;
+    height: 130vh;
+    position: relative;
+    color: white;
+}
+header nav {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    z-index: 10;
+}
+
+ nav ul {
+    list-style: none;
+    width: 420px;
+    background-color: black;
+    padding: 24px 10px;
+    height: 100vh;
+    clip-path: circle(10% at 10% 5%);
+}
+
+  header nav ul.active {
+    clip-path: circle(80% at -45% 8%);
+    background-color: #1FE1E9;
+}
+
+ header nav ul .menu {
+    width: 48px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 24px;
+    margin-left: 24px;
+
+}
+  header nav ul .menu span {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    padding: 2px;
+    width: 48px;
+    border-radius: 4px;
+}
+
+  header nav .menu span:nth-child(1) {
+    top: 0px;
+    background-color: white;
+}
+
+ header nav .menu span:nth-child(2) {
+    top: 18px;
+    background-color: white;
+}
+
+ header nav .menu span:nth-child(3) {
+    bottom: 0px;
+    background-color: white;
+}
+
+ header nav ul.active .menu span:nth-child(1) {
+    top: 0px;
+    left: 23px;
+    width: 4px;
+    height: 40px;
+    background-color: white;
+}
+
+ header nav ul.active .menu span:nth-child(2) {
+    width: 40px;
+    left: 5px;
+    background-color: white;
+}
+
+ header nav ul.active .menu span:nth-child(3) {
+    padding: 0px;
+    width: 0px;
+    background-color: white;
+}
+
+ header nav ul.active .menu {
+    transform: rotateZ(45deg);
+}
+
+ header nav ul li {
+    padding: 20px 44px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+ header  nav ul li.colored {
+    color: black;
+}
+
+ header nav ul li:hover {
+    background-color: #1FE1E9;
+    padding-left: 56px;
+}
+
+ header .exp {
+    position: relative;
+    top: 15px;
+    left: 110px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+}
+header .midd{
+    position: absolute;
+    top: 110px;
+    color: white;
+    left: 110px;
+}
+header .midd .pricing{
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 40px;
+}
+header .midd .test{
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 38px;
+}
+
+header .lead{
+position: absolute;
+top: 410px;
+left: 110px;
+color: #D24848;
+}
+header .lead .show{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4.2px;
+    color: #D24848;
+    opacity: 1;
+    font-weight: 600;
+}
+header .lead .month {
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 4.2px;
+    color: #D24848;
+    opacity: 1;
+    font-weight: 600;
+}
+header .lead .price {
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 4.2px;
+    color: #D24848;
+    opacity: 1;
+    font-weight: 600;
+}
+header i{
+    position: absolute;
+    top: 480px;
+    left: 110px;
+    font-size: 3px;
+    width: 100px;
+    background-color: #d24848;
+}
+
+/* second column start for heading*/
+header .lead2 {
+    position: absolute;
+    top: 410px;
+    left: 550px;
+    color: #FFB33F;
+}
+
+header .lead2 .show {
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4.2px;
+    color: #FFB33F;
+    opacity: 1;
+    font-weight: 600;
+}
+
+header .lead2 .month {
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 4.2px;
+    color: #FFB33F;
+    opacity: 1;
+    font-weight: 600;
+}
+
+header .lead2 .price {
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 4.2px;
+    color: #FFB33F;
+    opacity: 1;
+    font-weight: 600;
+}
+
+header .line2 i {
+    position: absolute;
+    top: 480px;
+    left: 550px;
+    font-size: 3px;
+    width: 180px;
+    background-color: #FFB33F;
+}
+
+/* third column start for heading*/
+header .lead3 {
+    position: absolute;
+    top: 410px;
+    left: 950px;
+    color: #1FE1E9;
+}
+
+header .lead3 .show {
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4.2px;
+    color: #1FE1E9;
+    opacity: 1;
+    font-weight: 600;
+}
+
+header .lead3 .month {
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 4.2px;
+    color: #1FE1E9;
+    opacity: 1;
+    font-weight: 600;
+}
+
+header .lead3 .price {
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 4.2px;
+    color: #1FE1E9;
+    opacity: 1;
+    font-weight: 600;
+}
+
+header .line3 i {
+    position: absolute;
+    top: 480px;
+    left: 950px;
+    font-size: 3px;
+    width: 70px;
+    background-color: #1FE1E9;
+}
